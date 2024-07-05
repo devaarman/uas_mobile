@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const setelan = () => {
+const Setelan = () => {
   return (
     <View>
       <Text>setelan</Text>
@@ -9,6 +9,6 @@ const setelan = () => {
   )
 }
 
-export default setelan
+export default Setelan
 
 const styles = StyleSheet.create({})
