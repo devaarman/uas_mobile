@@ -42,21 +42,23 @@ const panduanWudhuData = [
 ];
 const PanduanWudhu =() =>{
   return (
-    <ScrollView>
-    <View style={styles.container}>
-    <FlatList
-      data={panduanWudhuData}
-      renderItem={({item})=>(
-    <View>
-    <Text style={styles.text1}>{item.id}</Text>
-    <Text style={styles.text}>{item.title}</Text>
-    <Text style={styles.text}>{item.contentArabic}</Text>
-    <Text style={styles.text}>{item.contentTranslation}</Text>
-    </View>
-    )}
-    />
-    </View>
+    
+    <ScrollView style={styles.container}>
+      <View>
+        <FlatList
+          data={panduanWudhuData}
+          renderItem={({item})=>(
+          <View>
+            <Text style={styles.text1}>{item.id}</Text>
+            <Text style={styles.text}>{item.title}</Text>
+            <Text style={styles.text}>{item.contentArabic}</Text>
+            <Text style={styles.text}>{item.contentTranslation}</Text>
+          </View>
+        )}
+        />
+      </View>
     </ScrollView>
+    
   );
 }
 const styles = StyleSheet.create({
@@ -64,6 +66,7 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     paddingHorizontal: 16,
     paddingVertical: 20,
+     backgroundColor :'#B0C4DE'
   },
   text: {
     marginVertical: 8,

@@ -5,7 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import beranda from './screens/beranda'
-import setelan from './screens/setelan';
+import TentangAplikasi from './screens/TentangAplikasi';
 import profil from './screens/profil';
 import Panduansolat from './route/PanduanSolat';
 import PanduanWudhu from './screens/PanduanWudhu';
@@ -21,27 +21,27 @@ function MyTabs() {
       options={{
           tabBarLabel: 'Beranda',
           headerStyle:{
-            backgroundColor : '#9C5757',
-            color : 'white'
+            backgroundColor : '#FF1493',
+            
           },
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="home" color={color} size={size} />
           ),
         }}/>
-      <Tab.Screen name="Setelan" component={setelan} 
+      <Tab.Screen name="Tentang Aplikasi" component={TentangAplikasi} 
       options={{
         headerStyle:{
-          backgroundColor : '#9C5757'
+          backgroundColor : '#FF1493'
         },
-          tabBarLabel: 'Setelan',
+          tabBarLabel: 'Tentang Aplikasi',
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="cog" color={color} size={size} />
+            <MaterialCommunityIcons name="information" color={color} size={size} />
           ),
         }}/>
       <Tab.Screen name="Profil" component={profil} 
       options={{
         headerStyle:{
-          backgroundColor : '#9C5757'
+          backgroundColor : '#FF1493'
         },
           tabBarLabel: 'Profile',
           tabBarIcon: ({ color, size }) => (
@@ -57,7 +57,7 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ 
         headerStyle: {
-          backgroundColor :'#9C5757'
+          backgroundColor :'#C71585'
         }
       }}>
         <Stack.Screen name="home" component={MyTabs} options={{headerShown:false}}/>

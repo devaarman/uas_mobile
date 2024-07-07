@@ -9,7 +9,7 @@ const Beranda = ({navigation}) => {
       <View>
       <TouchableOpacity style={styles.button} 
       onPress={() => navigation.navigate('PanduanSholat')}>
-        <Text Hadist style={styles.buttonText}>Panduan sholat</Text>
+        <Text Hadist style={styles.buttonText}>Panduan Sholat</Text>
       </TouchableOpacity>
       <View>
       <TouchableOpacity style={styles.button} 
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor :'pink'
+    backgroundColor :'#ADD8E6'
   },
   title: {
     fontSize: 24,
@@ -43,14 +43,14 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   button: {
-    backgroundColor: '#9C5757',
+    backgroundColor: '#FFB6C1',
     padding: 10,
     borderRadius: 5,
     marginTop : 20,
   },
   buttonText: {
     fontSize: 18,
-    color: '#fff',
+    color: 'white',
   },
 });
 

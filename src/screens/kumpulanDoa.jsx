@@ -66,8 +66,9 @@ const doaSehariHariData = [
   ];
   const KumpulanDoa =() =>{
   return (
-    <ScrollView>
-    <View style={styles.container}>
+    
+    <ScrollView style={styles.container}>
+      <View>
     <FlatList
       data={doaSehariHariData}
       renderItem={({item})=>(
@@ -81,6 +82,7 @@ const doaSehariHariData = [
     />
     </View>
     </ScrollView>
+    
   );
 }
 const styles = StyleSheet.create({
@@ -88,6 +90,7 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     paddingHorizontal: 16,
     paddingVertical: 20,
+    backgroundColor :'#B0C4DE',
   },
   text: {
     marginVertical: 8,

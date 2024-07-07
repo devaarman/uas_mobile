@@ -13,8 +13,9 @@ const dataLangkahSolat = [
 ];
 const PanduanSholat =() =>{
   return (
-    <ScrollView>
-    <View style={styles.container}>
+    
+    <ScrollView style={styles.container}>
+      <View>
     <FlatList
       data={dataLangkahSolat}
       renderItem={({item})=>(
@@ -34,6 +35,7 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     paddingHorizontal: 16,
     paddingVertical: 20,
+     backgroundColor :'#B0C4DE'
   },
   text: {
     marginVertical: 8,
